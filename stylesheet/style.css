@@ -5,16 +5,10 @@ body {
 }
 
 body{
-	text-align: center;
+	text-align: left;
 }
 
-img {
-width: 1500px; /* Pas de breedte van de afbeelding aan naar wens */
-height: auto; /* Behoud de aspect ratio van de afbeelding */
-float: center; /* Plaats de afbeelding aan de rechterkant */
-margin: 0px; /* Voeg wat marge toe voor een betere opmaak */
-}
-
+/* Navigatie balk */
 nav {
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -25,17 +19,22 @@ nav {
 	align-items: center;
 	padding: 20px 100px;
 	color: #ffffff;
-    background: rgba(253, 185, 4, 0.868);
+    background: rgba(32, 34, 71, 0.868);
 }
+
+/* Logo linksboven */
 .logo {
 	font-size: 25px;
 	color: #ffffff;
 	padding: 0 15px;
 }
+
+/* Inrichting klik menu balk */
 .menu ul li {
 	display: inline-block;
 	margin: 0 15px;
 }
+
 .menu ul li a {
 	text-decoration: none;
 	cursor: pointer;
@@ -55,25 +54,28 @@ nav {
 /* achtergrond kleur */
 .header {
 	height: 100vh;
-	background: rgb(248, 242, 231)
+	background: rgb(55, 96, 140)
 }
 
 /* Normale tekst pagina */
 .script {
-	color: #000000;
-	position: absolute;
-	top: 95%;
-	left: 40%;
+	color: #ffffff;
+	
+	position: relative;
+	top: 15%;
+	left: 58%;
 	transform: translate(-50%, -50%);
 	text-align: left;
+	
 }
 
+/* Tekst home en portfolio */
 .banner-text {
-	color: rgba(253, 185, 4, 0.868);
+	color: rgba(255, 255, 255, 0.868);
 	position: absolute;
 	padding: 10px 20px;
-	top: 50%;
-	left: 40%;
+	top: 45%;
+	left: 35%;
 	transform: translate(-50%, -50%);
 	text-align: left;
 			
@@ -86,7 +88,7 @@ nav {
 	margin: 15px 0 40px;
 }
 .banner-text button {
-	background: rgb(253, 185, 4, 0.86);
+	background: rgb(53, 55, 94, 0.868);
 	border: none;
 	outline: none;
 	color: #fff;
@@ -95,6 +97,8 @@ nav {
 	font-family: montserrat;
 	display: inline-block;
 }
+
+
 @media (max-width: 1000px) {
 	nav {
 		flex-direction: column;
@@ -111,7 +115,7 @@ nav {
 	}
 	.banner-text {
 		left: 40%;
-		text-align: center;
+		text-align: left;
 		width: 70%;
 	}
     .banner-text h1 {
@@ -133,7 +137,7 @@ nav {
 	
 	.banner-text {
 		left: 40%;
-		text-align: center;
+		text-align: left;
 		width: 80%;
 	}
     .banner-text h1 {
