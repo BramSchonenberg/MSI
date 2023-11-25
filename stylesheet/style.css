@@ -3,7 +3,7 @@ body {
 	padding: 0;
 	font-family: montserrat;
 	text-align: left;
-	background-color: rgba(32, 34, 71, 0.868);
+	background-color: rgb(98, 129, 163);
 }
 
 p {
@@ -14,6 +14,7 @@ p {
 .body {
 	margin-left:100px;
 	margin-right:100px;
+	margin-top: 6px;
 }
 
 /* Navigatie balk */
@@ -75,10 +76,10 @@ nav {
     background: rgb(0, 0, 0);
 }
 
-/* achtergrond kleur */
+/* achtergrond kleur balk */
 .header {
 	height: 100px;
-	background: rgb(55, 96, 140)
+	background: rgb(15, 27, 39)
 }
 
 /* Normale tekst pagina */
@@ -100,15 +101,24 @@ nav {
 	text-align: left;
 			
 } 
+
+.image-100 {
+	width: 1000px; /* Pas de breedte van de afbeelding aan naar wens */
+	height: auto; /* Behoud de aspect ratio van de afbeelding */
+	float: right; /* Plaats de afbeelding aan de rechterkant */
+	margin :50px; /* Voeg wat marge toe voor een betere opmaak */
+	
+}
+
 h1 {
 	font-size: 60px;
-	margin: 0;
+	margin: 10;
 }
 p {
 	margin: 15px 0 40px;
 }
 button {
-	background: rgb(53, 55, 94, 0.868);
+	background: rgb(15, 27, 39);
 	border: none;
 	outline: none;
 	color: #fff;
