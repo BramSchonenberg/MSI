@@ -36,20 +36,47 @@
                 <div class="row-part">
                     <p></p>
                     <h2>Workshops en eindresultaat</h2>
-                    <p> Smart technology draait om het ontwerpen van een plantensysteem. Vanaf les 1  bestaat het vak uit zelf aan de slag gaan en vragen stellen wanneer nodig. Via een online les programma zijn we begonnen met het stap voor stap aansluiten en programmeren van de arduino, tot het moment waarop ik een breadbord had, met werkende hardware erop aangesloten. Binnen dit eerste deel heb ik voornamelijk samengewerkt met Brian en Frank. Doordat zij beiden kennis hebben van programmeren, hebben zij mij kunnen helpen wanneer ik er niet uitkwam. Andersom heb ik vanuit mijn studie vaker met hardware gewerkt, hierbij heb ik hen kunnen assisteren.</p>
+                    <p> Smart technology draait om het ontwerpen van een plantensysteem. Vanaf les 1  bestaat het vak uit zelf aan de slag gaan en vragen stellen wanneer nodig. Via een online les programma zijn we begonnen met het stap voor stap aansluiten en programmeren van de arduino, tot het moment waarop ik een breadbord met werkende hardware had. Binnen dit eerste deel heb ik voornamelijk samengewerkt met Brian en Frank. Doordat zij beiden kennis hebben van programmeren, hebben zij mij kunnen helpen wanneer ik er niet uitkwam. Andersom heb ik vanuit mijn studie vaker met hardware gewerkt, hierbij heb ik hen kunnen assisteren.<br>
+                    <br> Nadat de hardware goed aangesloten zat op het breadboard en het script geschreven was, werd het tijd voor het ontwerpen van de PCB.  Dit was 1 van mijn leerdoelen. Ik heb dit leerdoel aan mezelf gesteld, omdat ik vanuit mijn eigen studie producten ontwerp. Mijn interesse ligt bij productinteracties en dan voornamelijk wanneer er techniek toegepast wordt. Om techniek mooi te kunnen verwerken in een product, is een PCB ideaal.</p>
 
 
                 </div>
-                <div class="row-part align-end">
-                    <img src="images/cv pagina bloempot.png" alt="Competenties Connection">
-                    
-
-                </div>
+                <div id="slideshow">
+                    <img src="images/Tech1.jpg" alt="Afbeelding 1">
+                    <img src="afbeelding2.jpg" alt="Afbeelding 2">
+                    <img src="afbeelding3.jpg" alt="Afbeelding 3">
+                  </div>
+                  
+                  <script>
+                    let currentSlide = 0;
+                    const slides = document.querySelectorAll('#slideshow img');
+                  
+                    function showSlide(index) {
+                      slides.forEach((slide, i) => {
+                        if (i === index) {
+                          slide.style.display = 'block';
+                        } else {
+                          slide.style.display = 'none';
+                        }
+                      });
+                    }
+                  
+                    function nextSlide() {
+                      currentSlide = (currentSlide + 1) % slides.length;
+                      showSlide(currentSlide);
+                    }
+                  
+                    // Toon de eerste dia bij het laden van de pagina
+                    showSlide(currentSlide);
+                  
+                    // Automatisch naar de volgende dia na 2 seconden
+                    setInterval(nextSlide, 4000);
+                  </script>
                </Div>
 
                <div class="script">
                 <h3>Filmpje van werkend eindresultaat</h3>
-                <video width="260" height="auto" controls>
+                <video width="360" height="auto" controls>
                     <source src="images/plantensysteem.mp4" type="video/mp4">
                 </video>
 
