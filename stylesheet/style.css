@@ -16,7 +16,9 @@ p {
 	margin-right:100px;
 	margin-top: 6px;
 	margin-bottom: 100px;
+	
 }
+
 
 /* Navigatie balk */
 nav {
@@ -121,6 +123,20 @@ nav {
 .image-300 {
 	width: 900px; /* Pas de breedte van de afbeelding aan naar wens */
 	height: auto; /* Behoud de aspect ratio van de afbeelding */
+	float: center; /* Plaats de afbeelding aan de rechterkant */
+	margin :0px; /* Voeg wat marge toe voor een betere opmaak */
+}
+
+.image-400 {
+	width: 500px; /* Pas de breedte van de afbeelding aan naar wens */
+	height: auto; /* Behoud de aspect ratio van de afbeelding */
+	float: center; /* Plaats de afbeelding aan de rechterkant */
+	margin :0px; /* Voeg wat marge toe voor een betere opmaak */
+}
+
+.image-500 {
+	width: auto; /* Pas de breedte van de afbeelding aan naar wens */
+	height: 300px; /* Behoud de aspect ratio van de afbeelding */
 	float: center; /* Plaats de afbeelding aan de rechterkant */
 	margin :0px; /* Voeg wat marge toe voor een betere opmaak */
 }
