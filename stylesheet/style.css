@@ -141,6 +141,13 @@ nav {
 	margin :0px; /* Voeg wat marge toe voor een betere opmaak */
 }
 
+.image-600 {
+	width: auto; /* Pas de breedte van de afbeelding aan naar wens */
+	height: 100px; /* Behoud de aspect ratio van de afbeelding */
+	float: center; /* Plaats de afbeelding aan de rechterkant */
+	margin: 30px; /* Voeg wat marge toe voor een betere opmaak */
+}
+
 h2{
 	font-size: 30px;
 	margin: 0;
